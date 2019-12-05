@@ -1,7 +1,7 @@
 import nextId from "react-id-generator";
 export default class CoffeeService {
     constructor() {
-        this._apiBase = 'localhost:3000';
+        this._apiBase = 'http://localhost:3000';
         this.htmlId = nextId();
     }
     getResource = async (url) => {

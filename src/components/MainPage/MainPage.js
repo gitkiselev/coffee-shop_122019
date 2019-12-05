@@ -1,10 +1,11 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 //import './MainPage.css';
 //import imageBg from './Main_bg.jpg';
 import logo from './Logo.svg';
-import About from './About';
-import Footer from './Footer';
+import About from '../About';
+import Footer from '../Footer';
 import CoffeeService from '../../service/shopService';
 
 
@@ -73,6 +74,7 @@ export default class MainPage extends React.Component {
                <div className="col-lg-6">
                     <header>
                         <ul className="header">
+                            <Router>
                             <li className="header__item">
                                 <Link to="/">
                                     <img src={logo} alt="logo" />
@@ -84,6 +86,7 @@ export default class MainPage extends React.Component {
                             <li className="header__item">
                                 <Link to="/ItemPage">For your pleasure</Link>
                             </li>
+                            </Router>
                         </ul>
                     </header>
                </div>
